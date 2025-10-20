@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #define N 20
 
-
 typedef struct{
 	char name[N];
 	char surname[N];
