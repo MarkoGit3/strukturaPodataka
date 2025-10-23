@@ -17,7 +17,13 @@ q=head
 p=head--next
 sated=NULL
 temp=NULL
--petlja
+-petlja(p!=sorted) bolje za p--next!=sorted izvan prelje q=q---nest o p=sorted
+-if(strcmp(p--surname, p--next--surname)>0)
+temp=p--next;
+p--next=temp--next;
+temp--next=p;
+q--next=temp; ja koristio q di p i tako ali isti princip
+pazit na velika i mala slova
 */
 D. upisuje listu u datoteku,
 //otvori datoteku
