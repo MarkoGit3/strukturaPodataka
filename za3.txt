@@ -1,0 +1,41 @@
+za 3.:
+
+3. Prethodnom zadatku dodati funkcije:
+//po prezimenu
+A. dinamički dodaje novi element iza određenog elementa,
+//po prezimenu,  pronaci element iza, A zadatak dio
+B. dinamički dodaje novi element ispred određenog elementa,
+//po prezimenu, ko priajsnja ali ili dodatna varijabla koja nalazije prije varijablu.
+//q--nesxt = p --next; p--next=q;
+//ili s prev, q--next=p; prev--next= q;
+C. sortira listu po prezimenima osoba,
+//NAJBITNIJE
+/*
+koristimo u ovom i ne ostalima booble sort, jer pre sporo 
+inace koristiti prilikom unosa u konzolu automatski sortirati u ostalim zadacima
+q=head
+p=head--next
+sated=NULL
+temp=NULL
+-petlja(p!=sorted) bolje za p--next!=sorted izvan prelje q=q---nest o p=sorted
+-if(strcmp(p--surname, p--next--surname)>0)
+temp=p--next;
+p--next=temp--next;
+temp--next=p;
+q--next=temp; ja koristio q di p i tako ali isti princip
+pazit na velika i mala slova
+*/
+D. upisuje listu u datoteku,
+//otvori datoteku
+//fprintf (f za file)
+//fclose
+E. čita listu iz datoteke.
+//otvori datoteku
+//fscanf
+//fclose
+//pazit sta koristiti za ubacivanje (ako A onda nece ko u datoteci ako ide 1,2,3,4 nego inverzno) 2zad.C
+
+/* #define FILE_NOT -1 returnFILE_NOT; ili jos bolje EXIT_FAILURE odnosno EXT_Success
+prvo slovo varijabli/funkcija uvik malo pa ostale rici velike
+find el prominit da vraca p/q, kako bi ga stavili za u brisanje.
+i falimi da je q-- nesxt =NULL pa onda free(p) */
