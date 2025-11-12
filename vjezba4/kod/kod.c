@@ -73,11 +73,12 @@ int openFile(Position head, int opt) {
 			fclose(file);
 			return EXIT_FAILURE;
 		}
+		q->coef = tempCf;
+		q->pow = tempPw;
+		p = head;
 		while (p->next != NULL && tempPw > p->next->pow) {
 			p = p->next;
 		}
-		q->coef = tempCf;
-		q->pow = tempPw;
 		q->next = p->next;
 		p->next = q;
 	}
@@ -123,7 +124,7 @@ int addP(Position firstP, Position secondP, Position p) {
 				puts("Greska pri alokaciji memorije.");
 				return EXIT_FAILURE;
 			}
-			while (head->next != NULL) {
+			while (head->next != NULL && head->next->pow > max) {
 				head = head->next;
 			}
 			q->coef = add;
