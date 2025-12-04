@@ -76,7 +76,7 @@ int openFile(Position head, int opt) {
 		q->coef = tempCf;
 		q->pow = tempPw;
 		p = head;
-		while (p->next != NULL && tempPw > p->next->pow) {
+		while (p->next != NULL && tempPw < p->next->pow) {
 			p = p->next;
 		}
 		q->next = p->next;
@@ -133,6 +133,7 @@ int addP(Position firstP, Position secondP, Position p) {
 			head->next = q;
 		}
 	}
+	puts("Test");
 	return EXIT_SUCCESS;
 }
 int multiP(Position firstP, Position secondP, Position p) {
