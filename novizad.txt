@@ -46,7 +46,19 @@ pop(&headStack) //izbacit zadnji el iz stacka
 temp=HEADstack--next
 headStack--next=temp--next (temp next an Null)
 free(temp)
-
-
-
-
+4) dir (pregled sadrzaja odnosno "ls isti")
+ne treba nužno za varijable razinu (preko rekurzije za pod djelove, rekurzija losa za memoriju)
+printDir(DirPosition, current, int level //samo za ispis bitan koliko tab)
+{ DirPosition currSubdir=NULL //djeca
+if(current--subdirPosition=NULL) //jel dica razlicito od nula
+currSubdir=current--subdirPosition; 
+while(currentSubdir!=NULL){
+printf ... subdDIr--name //ime subdirextorija npr x64
+printDir--name;
+printDir(subbSubdir, level)
+surrsubDir=currentsubDir--next
+}
+}
+5)
+oslobodit memoriju, na najmanju razinu pa gore i headDir i headStack i stack
+//nema fajlova odi sve u RAM
