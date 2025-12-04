@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "lib/library.h"
 #define N 50
 
 struct _Article;
@@ -321,26 +322,72 @@ int printAllBill(bilPosition head) {
 	return EXIT_SUCCESS;
 }
 int totalPerArticle(bilPosition head) {
-	// temp
-	bilPosition headBil = head->nextBil;
+	bilPosition headBil = head->nextBil; //glavna
 	if (headBil == NULL) {
 		puts("Fajl nije ucitan.");
 		return EXIT_FAILURE;
 	}
-	artPosition bilEl = NULL;
-	artPosition tempLis = NULL;
+	artPosition bilEl = NULL; //glavna
+	artPosition cur = NULL; //trenutna privremena
+	artPosition prev = cur; //prosla privremena
+	artPosition newEl = NULL; //nova
 
 	while (headBil != NULL) {
 		bilEl = headBil->firstArt;
 		while (bilEl != NULL) {
-			tempLis = (artPosition)malloc(sizeof(Article));
-			while(1){}
+			cur = newEl;
+			prev = NULL;
+			while (cur != NULL) {
+				if (strcmp(cur->name, bilEl->name) == 0) {
+					cur->total = cur->total + bilEl->total;
+					cur->price = bilEl->price;
+					break;
+				}
+				prev = cur;
+				cur = cur->next;
+			}
 
+			if(cur == NULL){ // ako ne postoji, dodajemo novi element
+				artPosition newArt = (artPosition)malloc(sizeof(Article));
+				if (newArt == NULL) {
+                    puts("Neuspjesna alokacija memorije.");
+                    cur = newEl;
+					artPosition temp;
+                    while (cur != NULL) {
+                        artPosition temp = cur;
+                        cur = cur->next;
+                        free(temp);
+                    }
+                    return EXIT_FAILURE;
+                }
+                strcpy(newArt->name, bilEl->name);
+				newArt->total = bilEl->total;
+				newArt->price = bilEl->price;
+				newArt->next = NULL;
+
+                if (newEl == NULL)
+                    newEl = newEl;
+                else
+                    prev->next = newArt;
+            }
 			bilEl = bilEl->next;
 		}
 		headBil = headBil->nextBil;
 	}
 
-	//free();
+	puts("Ime, ukuno:");
+	cur = newEl;
+	while (cur != NULL) {
+		printf("%s %f\n", cur->name, cur->price);
+		cur = cur->next;
+	}
+
+	artPosition temp;
+	cur = newEl;
+	while(cur != NULL){
+		temp = cur;
+		cur = cur->next;
+		free(temp);
+	}
 	return EXIT_SUCCESS;
 }
