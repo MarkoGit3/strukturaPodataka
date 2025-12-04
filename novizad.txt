@@ -1,1 +1,27 @@
 Iduci
+Napisati program koji pomoću vezanih listi (stabala) predstavlja strukturu direktorija.
+Omogućiti unos novih direktorija i pod-direktorija, ispis sadržaja direktorija i
+povratak u prethodni direktorij. Točnije program treba preko menija simulirati
+korištenje DOS naredbi: 1- "md", 2 - "cd dir", 3 - "cd..", 4 - "dir" i 5 – izlaz.
+
+unos mreko md, cd ko linux, cd ... nazad, exit za van.
+preko stabla, aka dvostruko vezani pokazivaci i stacka (u njemu pamtit prethodne da znamo gdje se trenutno nalazimo)
+struct directory
+char ime
+directPosition subDir
+directPosition next}
+struct stack
+drPosition dirLevel (razina hajrahije u kojoj smo)
+structPosition next}
+main:
+headDir
+headStack
+alokacije za "C:"
+oba na nulu mu pokazivaca, pa:
+headDir-next=rootDir
+pa, C direktorij dodat na stack
+novi čvor newStack kopirat s dirrektorija u new stack
+odnosno push adresu od headStack i vrijednost push(headStack, rootDir);
+to je prvi direktorij.
+switch case izbornik.
+1) mp
