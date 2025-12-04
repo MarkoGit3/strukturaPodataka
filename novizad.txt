@@ -24,4 +24,29 @@ novi čvor newStack kopirat s dirrektorija u new stack
 odnosno push adresu od headStack i vrijednost push(headStack, rootDir);
 to je prvi direktorij.
 switch case izbornik.
-1) mp
+1) md
+alocirat newEl
+//stog govori di se generiraju novi direktoriji
+npr Users pokazivaci na NULL
+pa citamo roditelja aka pristupit stacku i dobit root dir kao pokazivac
+odnosno (parentdirektorij) headStack-next-dirLevel 
+sta je isto kao newEl-dirleve sta je rootDir
+//ne treba sortiranje pri unosu za ovi zadatak
+childEl-next = parentDir--subDir //podirektroija od C
+parentDir-subDir = childEl
+//unili tako prvi el, kad se novi unese smao se ponovi
+//mislim da se svakako ubaciva na kraj koje vec razine
+2) cd dir (pozicija)
+-provjeriti postojanje
+-if petlja za provjeru gleda stanje na rootu pretraziva se po stogu odnosno sve na toj razini
+-temp=headStack-next-driectlevel  (dom tu je isto ko do adresa od  C) -subdir-name  (provjerit ime direktorija u koji se zelimo ubacit)
+3) cd .. (nazad)
+provjera jesmo li u root
+pop(&headStack) //izbacit zadnji el iz stacka
+temp=HEADstack--next
+headStack--next=temp--next (temp next an Null)
+free(temp)
+
+
+
+
