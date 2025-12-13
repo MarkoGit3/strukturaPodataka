@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba7\\kod\\test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|solutionrelative:test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba7\\kod\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|solutionrelative:test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba7\\kod\\test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{50DB228D-B4DD-4BA7-8C62-176EBABDD501}|kod.vcxproj|solutionrelative:test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "test.h",
               "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba7\\kod\\test.h",
               "RelativeDocumentMoniker": "test.h",
@@ -34,8 +34,7 @@
               "RelativeToolTip": "test.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-08T10:45:53.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T10:45:53.428Z"
             },
             {
               "$type": "Document",
@@ -45,14 +44,14 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba7\\kod\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAFUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-12-08T10:06:31.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "test.c",
               "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba7\\kod\\test.c",
               "RelativeDocumentMoniker": "test.c",
