@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba9\Kod\main.c(44,25): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
+  Kod.vcxproj -> C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba9\Kod\x64\Debug\Kod.exe
