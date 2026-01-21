@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|solutionrelative:test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|solutionrelative:test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|solutionrelative:test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A52275B7-9D47-48DA-A03F-57FE9A85838C}|Kod.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\main.c",
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwCcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-02T21:03:57.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "test.c",
               "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\test.c",
               "RelativeDocumentMoniker": "test.c",
               "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\test.c",
               "RelativeToolTip": "test.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-02T21:05:21.851Z",
               "EditorCaption": ""
@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "test.h",
               "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba9\\Kod\\test.h",
               "RelativeToolTip": "test.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-02T21:05:11.644Z",
               "EditorCaption": ""

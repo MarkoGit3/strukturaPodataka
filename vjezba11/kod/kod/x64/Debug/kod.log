@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba11\kod\main.c(63,21): warning C4047: '=': 'countryPosA *' differs in levels of indirection from 'countryPosA'
+  test.c
+  Generating Code...
+  kod.vcxproj -> C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba11\kod\x64\Debug\kod.exe
