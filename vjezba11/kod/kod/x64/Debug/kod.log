@@ -1,5 +1,4 @@
-﻿  main.c
-C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba11\kod\main.c(63,21): warning C4047: '=': 'countryPosA *' differs in levels of indirection from 'countryPosA'
-  test.c
-  Generating Code...
+﻿  test.c
+C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba11\kod\test.c(138,30): warning C4028: formal parameter 1 different from declaration
+C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba11\kod\test.c(165,30): warning C4028: formal parameter 1 different from declaration
   kod.vcxproj -> C:\Users\Marko - Faks\Desktop\strukture\vjezbe i ostalo\vjezba11\kod\x64\Debug\kod.exe

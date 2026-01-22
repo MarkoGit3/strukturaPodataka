@@ -13,7 +13,6 @@ typedef struct _CityA {
 struct _CountryA;
 typedef struct _CountryA* countryPosA;
 typedef struct _CountryA {
-	int key;
 	char name[30];
 	countryPosA nextCountry;
 	cityPosA tree;
@@ -22,26 +21,18 @@ typedef struct _CountryA {
 struct _HashTable; 
 typedef struct _HashTable{
 	int size;
-	countryPosA* hashList;//sa * valjda
+	countryPosA* hashList;
 }HashTable;
 
-/*
-struct _HashTable;
-typedef struct _HashTable* hashList;
-typedef struct _HashTable{
-	int size;
-	Position hashList;
-}HashTable;
-*/
 
 int cityImportA(cityPosA* temp, char name[]);
-int countryImportA(countryPosA* head, HashTable* hash);
+int countryImportA(HashTable* hash, int);
 cityPosA insertTreeA(cityPosA, cityPosA);
-int printCountrysA(countryPosA);
+int printCountrysA(HashTable* hash);
 int printCitysA(cityPosA);
-countryPosA freeCountrysA(countryPosA);
+int freeCountrysA(countryPosA);
 cityPosA freeCitysA(cityPosA);
-int findCountryA(countryPosA);
+int findCountryA(HashTable* hash);
 int findCityA(cityPosA, int);
 int primNumber(int);
 

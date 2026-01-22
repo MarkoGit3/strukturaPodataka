@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|solutionrelative:test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|solutionrelative:test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F1B74F0-9C47-4967-9B9B-7E0E9E7757EC}|kod.vcxproj|solutionrelative:test.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-01-15T02:26:49.845Z",
               "EditorCaption": ""
@@ -40,26 +40,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "test.c",
-              "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.c",
-              "RelativeDocumentMoniker": "test.c",
-              "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.c",
-              "RelativeToolTip": "test.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-01-14T23:43:53.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "test.h",
               "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.h",
               "RelativeDocumentMoniker": "test.h",
               "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.h",
               "RelativeToolTip": "test.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwCAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-14T23:44:04.439Z"
+              "WhenOpened": "2026-01-14T23:44:04.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.c",
+              "DocumentMoniker": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.c",
+              "RelativeDocumentMoniker": "test.c",
+              "ToolTip": "C:\\Users\\Marko - Faks\\Desktop\\strukture\\vjezbe i ostalo\\vjezba11\\kod\\test.c",
+              "RelativeToolTip": "test.c",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAD4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-01-14T23:43:53.247Z",
+              "EditorCaption": ""
             }
           ]
         }

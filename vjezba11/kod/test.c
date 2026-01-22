@@ -4,8 +4,7 @@
 #include <string.h>
 #include "test.h"
 
-int countryImportA(countryPosA* temp, HashTable hash) {
-	countryPosA head = *temp;
+int countryImportA(HashTable* hash, int size) {
 	FILE* file = fopen("drzave.txt", "r");
 	if (file == NULL) {
 		puts("Fajl nije pronaden.");
@@ -13,6 +12,7 @@ int countryImportA(countryPosA* temp, HashTable hash) {
 	}
 	char buffer[50];
 	char name[50];
+	int index;
 
 	while (fscanf(file, "%s %s", name, buffer) == 2) {
 		countryPosA newEl = (countryPosA)malloc(sizeof(CountryA));
@@ -23,36 +23,42 @@ int countryImportA(countryPosA* temp, HashTable hash) {
 		}
 		strcpy(newEl->name, name);
 		newEl->tree = NULL;
-		
-		if (*(hash.hashList) == NULL) {
+		newEl->nextCountry = NULL;
 
+		index = 0;
+		for (int i = 0; i < 5 && name[i] != '\0'; i++) {
+			index += (int)name[i];
 		}
-		
-		
-		else if(){
-			strcmp(head->name, );
-			
-			head = *temp;
-			while (head->nextCountry != NULL && (strcmp(head->nextCountry->name, newEl->name) < 0)) {
-				head = head->nextCountry;
-			}
-			newEl->nextCountry = head->nextCountry;
-			head->nextCountry = newEl;
-			cityImportA(&newEl->tree, buffer);
-		}
+		index = (index) % size;
+		countryPosA* listHead = &hash->hashList[index];
 
+		if (*listHead == NULL) {
+			*listHead = newEl;
+		}
+		else if (strcmp((*listHead)->name, newEl->name) > 0) {
+			newEl->nextCountry = *listHead;
+			*listHead = newEl;
+		}
 		else {
-			while (hash.hashList != NULL && strcmp(> 0))
+			countryPosA current = *listHead;
+			while (current->nextCountry != NULL && strcmp(current->nextCountry->name, newEl->name) < 0) {
+				current = current->nextCountry;
+			}
+
+			newEl->nextCountry = current->nextCountry;
+			current->nextCountry = newEl;
 		}
-		newEl->key = key;
+		cityImportA(&newEl->tree, buffer);
 	}
 
 	fclose(file);
-	head = (*temp)->nextCountry;
 	puts("Pronadene drzava:");
-	while (head != NULL) {
-		printf("%s\n", head->name);
-		head = head->nextCountry;
+	for (int i = 0; i < hash->size; i++) {
+		countryPosA current = hash->hashList[i];
+		while (current != NULL) {
+			printf("%s\n", current->name);
+			current = current->nextCountry;
+		}
 	}
 	puts("");
 	return EXIT_SUCCESS;
@@ -105,22 +111,18 @@ cityPosA insertTreeA(cityPosA root, cityPosA newEl)
 	}
 	return root;
 }
-int printCountrysA(countryPosA temp) {
-	if (temp == NULL) {
-		puts("Prazna lista.");
-		return EXIT_FAILURE;
+int printCountrysA(HashTable* hash) {
+	countryPosA head;
+
+	for (int i = 0; i < hash->size; i++) {
+		head = hash->hashList[i];
+		while (head != NULL) {
+			printf("%s\n", head->name);
+			printCitysA(head->tree);
+			printf("\n");
+			head = head->nextCountry;
+		}
 	}
-	countryPosA head = temp->nextCountry;
-
-	int i = 0;
-
-	while (head != NULL) {
-		printf("%s\n", head->name);
-		printCitysA(head->tree);
-		printf("\n");
-		head = head->nextCountry;
-	}
-
 	return EXIT_SUCCESS;
 }
 int printCitysA(cityPosA temp) {
@@ -133,16 +135,22 @@ int printCitysA(cityPosA temp) {
 	printCitysA(root->right);
 	return EXIT_SUCCESS;
 }
-countryPosA freeCountrysA(countryPosA head) {
-	countryPosA temp;
-	while (head != NULL) {
-		temp = head;
-		head = head->nextCountry;
+int freeCountrysA(HashTable* hash) {
+	for(int i=0; i<hash->size; i++)
+	{
+		countryPosA head = hash->hashList[i];
+		countryPosA temp;
+		while (head != NULL) {
+			temp = head;
+			head = head->nextCountry;
 
-		freeCitysA(temp->tree);
-		free(temp);
+			freeCitysA(temp->tree);
+			free(temp);
+		}
 	}
-	return NULL;
+	free(hash->hashList);
+	hash->hashList = NULL;
+	return EXIT_SUCCESS;
 }
 cityPosA freeCitysA(cityPosA root) {
 	if (root == NULL) {
@@ -191,9 +199,21 @@ int findCityA(cityPosA root, int value) {
 
 	return EXIT_SUCCESS;
 }
-
-int primNumber(int old){
-	int cur = old;
-	return cur;
+int primNumber(int n) {
+	int i, prost;
+	if (n <= 2) {
+		puts("Neispravna velicina tablice.");
+		return 2;
+	}
+	while (1) {
+		prost = 1;
+		for (i = 2; i * i <= n; i++) {
+			if (n % i == 0) {
+				prost = 0;
+				break;
+			}
+		}
+		if (prost) { return n; }
+		n++;
+	}
 }
-
